@@ -1,0 +1,35 @@
+# Tomcat
+server:
+    tomcat:
+        uri-encoding: UTF-8
+        max-threads: 1000
+        min-spare-threads: 30
+    port: 8083
+    servlet:
+        context-path: /generator
+
+# mysql
+spring:
+    datasource:
+        type: com.alibaba.druid.pool.DruidDataSource
+        driverClassName: com.mysql.jdbc.Driver
+        url: jdbc:mysql://localhost:3306/security?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+        username: root
+        password: jhyOver3f
+    jackson:
+        time-zone: GMT+8
+        date-format: yyyy-MM-dd HH:mm:ss
+    resources:
+            static-locations: classpath:/static/,classpath:/views/
+
+# Mybatis配置
+mybatis-plus: 
+  mapper-locations: classpath*:mapper/**/*.xml
+
+
+
+logging:
+  level: debug
+  level.com.mjcio.mjfast.generator: debug
+  path: logs/
+  file: api.log

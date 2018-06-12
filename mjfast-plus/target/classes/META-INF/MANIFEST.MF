@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: mjfast-plus
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: chenls04
+Implementation-Vendor-Id: com.mjcio
+Build-Jdk: 1.8.0_40
+Implementation-URL: http://projects.spring.io/spring-boot/mjfast-root/
+ mjfast-plus/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
